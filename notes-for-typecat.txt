@@ -1,0 +1,42 @@
+TODO: 
+
+NOTE:
+
+Script author is Hartmut Bornemann, hvb356@hotmail.de
+
+Herbert Walter at skypixels@skypixels.at hosts the links to Hartmut's scripts at https://www.skypixels.at/pixinsight_scripts.html
+
+Notes on TypeCat:
+
+TypeCat is a great utility and needs some maintenance. In priority order something like:
+
+
+        
+      fix file path issues on non-Windows due to file separator "\"
+
+        
+      update to align with new Custom Catalog format:
+
+
+        
+      CSV: change tabs to commas on read and write
+
+        
+      CSV: change heading line to alpha, delta, magnitude, diameter, type
+
+        
+      decide whether to continue to support tabs because we could but it's more complicated handling both cases
+
+
+
+        
+      #engine v8 upgrade, rework code as needed to work on v8
+
+        
+      edit #feature-id to place TypeCat under SCRIPT --> Astrometry with other annotation and astro catalog scripts instead of near the bottom of Utilities
+
+        
+      rework or abandon Annotation integration - the script used to update the Annotation.js list of custom catalogs on Save, but that no longer works, yet there are a few UI elements devoted to that function. So, we could support it, if we want to allow this script to modify the same ANNOT_SETTINGS_MODULE values as AnnotateImage, that would have to be fixed up in here. Personally, I do not find it essential for the tool to continue to be useful.
+
+I have fixes ready and tested for handling CSV catalogs with new headers on input and output, removing support for TSV (or ready to try to handle both).
+Planning to request merge of the file path bug fix and CSV / TSV changes. Separate V8 upgrade code changes to a merge after that? 
