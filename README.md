@@ -2,7 +2,7 @@
 
 ## TypeCat: a catalog creator for use with PixInsight image annotation
 
-  If one or more object types are required for an image analysis, **TypeCat** can create the list of existing objects for the **AnnotateImage** script to use as a Custom catalog layer. **TypeCat** searches SIMBAD for all occurrences of an object type and collects the results in a file. For example, if all infrared sources, carbon stars and quasars are to be identified, the search terms **IR**, **C \*** and **QSO** must be entered one after the other. The saved custom-catalog formatted file can then be used by PixInsight annotation scripts.
+  If one or more object types are required for an image analysis, **TypeCat** can create the list of available known objects in a plate-solved image view, which the **AnnotateImage** script can then add as a **Custom catalog** layer. **TypeCat** searches SIMBAD for all occurrences of an object type and collects the results in a file. For example, if all infrared sources, carbon stars and quasars are to be identified, the search terms **IR**, **C \*** and **QSO** must be entered one after the other. The saved custom-catalog formatted file can then be used by PixInsight annotation scripts.
 
 ## Provenance and History
 
